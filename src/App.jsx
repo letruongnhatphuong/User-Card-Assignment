@@ -56,50 +56,17 @@ const users = [
     email: "fakeEmail@email.com",
   },
 
-  {
-    image: icon,
-    name: "Louie Duck",
-    email: "fakeEmail@email.com",
-  },
-
-  {
-    image: icon,
-    name: "Chip",
-    email: "fakeEmail@email.com",
-  },
-
-  {
-    image: icon,
-    name: "Dale",
-    email: "fakeEmail@email.com",
-  },
-
-  {
-    image: icon,
-    name: "Chip",
-    email: "fakeEmail@email.com",
-  },
-
-  {
-    image: icon,
-    name: "Dale",
-    email: "fakeEmail@email.com",
-  },
-
-  {
-    image: icon,
-    name: "Chip",
-    email: "fakeEmail@email.com",
-  },
-
 ];
 
 function UserCard({ image, name, email }) {
   return (
-    <div>
+    <div className='user-image'>
       <img src={image} alt={name} width={80} />
-      <h2>{name}</h2>
-      <p>{email}</p>
+
+      <div className='user-info'>
+        <h2>{name}</h2>
+        <p>{email}</p>
+      </div>
     </div>
   );
 
