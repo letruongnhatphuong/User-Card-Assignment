@@ -16,7 +16,7 @@ body {
   padding: 32px;
 }
 
-.user-image {
+.user-card {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -24,7 +24,7 @@ body {
   background: #e3e6ef;
 }
 
-.user-image img {
+.user-card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;

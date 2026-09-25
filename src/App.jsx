@@ -60,7 +60,7 @@ const users = [
 
 function UserCard({ image, name, email }) {
   return (
-    <div className='user-image'>
+    <div className='user-card'>
       <img src={image} alt={name} width={80} />
 
       <div className='user-info'>
