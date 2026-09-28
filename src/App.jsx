@@ -1,61 +1,48 @@
 import './App.css'
-import icon from './assets/icon.png'
 
 const users = [
   {
-    image: icon,
-    name: "Mickey Mouse",
-    email: "fakeEmail@email.com",
+    "id": 7,
+    "email": "michael.lawson@reqres.in",
+    "first_name": "Michael",
+    "last_name": "Lawson",
+    "avatar": "https://reqres.in/img/faces/7-image.jpg"
   },
-
   {
-    image: icon,
-    name: "Minnie Mouse",
-    email: "fakeEmail@email.com",
+    "id": 8,
+    "email": "lindsay.ferguson@reqres.in",
+    "first_name": "Lindsay",
+    "last_name": "Ferguson",
+    "avatar": "https://reqres.in/img/faces/8-image.jpg"
   },
-
   {
-    image: icon,
-    name: "Donald Duck",
-    email: "fakeEmail@email.com",
+    "id": 9,
+    "email": "tobias.funke@reqres.in",
+    "first_name": "Tobias",
+    "last_name": "Funke",
+    "avatar": "https://reqres.in/img/faces/9-image.jpg"
   },
-
   {
-    image: icon,
-    name: "Daisy Duck",
-    email: "fakeEmail@email.com",
+    "id": 10,
+    "email": "byron.fields@reqres.in",
+    "first_name": "Byron",
+    "last_name": "Fields",
+    "avatar": "https://reqres.in/img/faces/10-image.jpg"
   },
-
   {
-    image: icon,
-    name: "Goofy",
-    email: "fakeEmail@email.com",
+    "id": 11,
+    "email": "george.edwards@reqres.in",
+    "first_name": "George",
+    "last_name": "Edwards",
+    "avatar": "https://reqres.in/img/faces/11-image.jpg"
   },
-
   {
-    image: icon,
-    name: "Pluto",
-    email: "fakeEmail@email.com",
-  },
-
-  {
-    image: icon,
-    name: "Scrooge McDuck",
-    email: "fakeEmail@email.com",
-  },
-
-  {
-    image: icon,
-    name: "Huey Duck",
-    email: "fakeEmail@email.com",
-  },
-
-  {
-    image: icon,
-    name: "Dewey Duck",
-    email: "fakeEmail@email.com",
-  },
-
+    "id": 12,
+    "email": "rachel.howell@reqres.in",
+    "first_name": "Rachel",
+    "last_name": "Howell",
+    "avatar": "https://reqres.in/img/faces/12-image.jpg"
+  }
 ];
 
 function UserCard({ image, name, email }) {
@@ -75,11 +62,11 @@ function UserCard({ image, name, email }) {
 function App() {
   return (
     <div className='user-cards'>
-      {users.map((user, index) => (
+      {users.map((user) => (
         <UserCard
-          key={index}
-          image={user.image}
-          name={user.name}
+          key={user.id}
+          image={user.avatar}
+          name={`${user.first_name} ${user.last_name}`}
           email={user.email}
         />
       ))}
@@ -88,4 +75,3 @@ function App() {
 }
 
 export default App;
-
